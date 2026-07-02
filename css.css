@@ -85,11 +85,14 @@ h2 {
     cursor: pointer;
 }
 .completed {
+    display: flex;
+    justify-content: space-between;
     border-left-color: #00b37e;
     opacity: 0.6;
     text-decoration: line-through;
     padding:0.8rem;
     border-radius: 6px;
+    cursor: pointer;
 
 }
 
