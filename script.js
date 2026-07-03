@@ -7,6 +7,7 @@ add.addEventListener("click",(evt)=>{
     if(todoinput.value!==""){
         let newitem=document.createElement("li")
         newitem.classList.add("todo-item")
+        
 
         // 1. Create a span for the text to separate it from the button
         let textSpan = document.createElement("span")
@@ -40,6 +41,13 @@ add.addEventListener("click",(evt)=>{
         todoinput.value=""
         list.prepend(newitem)
     } 
+})
+let clear=document.querySelector(".clear")
+
+clear.addEventListener("click",()=>{
+    while(list.hasChildNodes("li")==true){
+        list.firstChild.remove()
+    }
 })
 
 
