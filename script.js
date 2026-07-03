@@ -17,6 +17,9 @@ add.addEventListener("click",(evt)=>{
         let newdel=document.createElement("button")
         newdel.classList.add("delete-btn")
         newdel.innerHTML=`<i class="fa-solid fa-trash" aria-hidden="true"></i>`
+        newdel.addEventListener("click",()=>{
+            newitem.remove()
+        })
         
         // 3. CRITICAL: Append the delete button inside the li element!
         newitem.appendChild(newdel) 

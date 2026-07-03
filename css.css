@@ -19,7 +19,7 @@ body {
     padding: 2rem;
     border-radius: 8px;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     box-shadow: 0 8px 24px rgba(0, 0.59, 0, 0.69);
 }
 
@@ -120,4 +120,26 @@ h2 {
 .delete-btn:hover {
     background: #f75a68;
     color: #fff;
+}
+.clear-container{
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0.85rem;
+
+}
+.clear{ 
+    width: 200px;
+    height:45px;
+    border-radius: 6px;
+    background-color: #00875e;
+    color: #fff;
+    border: none;
+    margin: 1rem;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+.clear:hover{
+    background-color: #00875e79;
 }
